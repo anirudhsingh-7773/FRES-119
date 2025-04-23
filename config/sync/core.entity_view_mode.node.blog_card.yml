@@ -1,0 +1,11 @@
+uuid: 8c159a33-7691-4a15-9675-4e5024d56036
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.blog_card
+label: 'Blog Card'
+description: 'View mode for blog card'
+targetEntityType: node
+cache: true
