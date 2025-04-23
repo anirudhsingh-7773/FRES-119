@@ -19,6 +19,10 @@
         "drupal/core-composer-scaffold": "^10.4",
         "drupal/core-project-message": "^10.4",
         "drupal/core-recommended": "^10.4",
+        "drupal/entityqueue": "^1.9",
+        "drupal/paragraphs": "^1.19",
+        "drupal/quick_node_clone": "^1.22",
+        "drupal/smart_read_more_link": "^2.0",
         "drush/drush": "^12.5"
     },
     "conflict": {

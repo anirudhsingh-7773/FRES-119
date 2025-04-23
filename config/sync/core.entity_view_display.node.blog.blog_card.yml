@@ -1,0 +1,46 @@
+uuid: 3eec28af-6774-4951-9b4c-206a2930f746
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.blog_card
+    - field.field.node.blog.body
+    - field.field.node.blog.field_banner_image
+    - field.field.node.blog.field_category
+    - field.field.node.blog.field_comments
+    - field.field.node.blog.field_featured
+    - image.style.thumbnail
+    - node.type.blog
+  module:
+    - image
+    - smart_read_more_link
+    - user
+id: node.blog.blog_card
+targetEntityType: node
+bundle: blog
+mode: blog_card
+content:
+  body:
+    type: smart_read_more_link
+    label: hidden
+    settings:
+      trim_length: '150'
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_banner_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_category: true
+  field_comments: true
+  field_featured: true
+  links: true
